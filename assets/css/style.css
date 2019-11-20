@@ -1,95 +1,104 @@
- body {
+ body, html {
       background-image: url(../images/gravel.png);
-      margin: 0px;
-      display: flex; flex-direction: column; /*for the flex container*/
-      height: 100vh;  /*flex container*/
+      /* margin: 0px; */
+      /* display: flex; flex-direction: column;  */
+      height: 100%;  /*flex container*/
   }
   
   /* navigator */
-  nav {
+  .navbar {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%;
     background-color: white;
-    border-bottom: 3px solid  #cccccc; 
+    border-bottom: 3px solid  #cccccc;  */
   }
   
-  /* unwanted empty space on top */
-  ul {
-      margin: 0;
-      padding: 0;
-  }
 
-  li.name {
+  /* li.name {
     float: left;
     list-style-type: none;
-    margin-left: calc(calc(100% - 960px)/2); /*for screen resizes*/
-    background-color: #4aaaa5;
+    margin-left: calc(calc(100% - 960px)/2); for screen resizes */
+    /* background-color: #4aaaa5;
     color: white;
     width: 150pt;
     font-size: 130%;
     padding-left: 30px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
+} */
 
-  li.link, li.contact {
-      float: right;
-      list-style-type: none;
-      padding-top: 25px;
-      line-height: 1px; 
+  li.port, li.about {
+    border-right: 2px solid  rgba(119,119,119, 0.2); 
+      /* float: right; */
+      padding: 10px;
+      line-height: 1px;
+      /* list-style-type: none; */
+      /* padding-top: 25px; */
+      /* line-height: 1px;  */
   }
 
   li.contact {
-    margin-right: calc(calc(100% - 960px)/2); /*for screen resizes*/
+    /* float: right; */
+    padding: 10px 0 10px 0px;
+    line-height: 1px;
   }
 
-  li.link a {
-      display: block;
+  .pad-0 {
+    padding: 0;
+  }
+  /* li.contact {
+    margin-right: calc(calc(100% - 960px)/2); /*for screen resizes*/
+  
+
+  /* li.link a { */
+      /* display: block;
       color: #777777;
       padding: 15px 16px;
-      text-decoration: none;
-      border-right: 2px solid  rgba(119,119,119, 0.2); /*opacity would fade text*/
-  }
+      text-decoration: none; */
+     /*opacity would fade text*/
+  /* } */
 
-  li.contact a {
+  /* li.contact a {
     display: block;
     color: #777777;
     padding: 15px 16px;
     text-decoration: none;
-  }
+  } */
 
-  li.link a:hover, li.contact a:hover {
+  /* li.link a:hover, li.contact a:hover {
     background-color: #4aaaa5;
     color: white;
-  }
+  } */
 
   /* pushes footer and navbar. centers content. */
   .flex-container {
     flex: 1 0 auto;
-    text-align: center;
-}
+    margin-top: 40pt;
+    /* text-align: center; */
+  }
 
-.container {
+
+/* .container {
     width: 960px;
     display: inline-block;
     text-align: center;
     background-color: white;
     border-color: #dddddd;
     margin-top: 40px;
-  }
+  } */
 
-  .card {
+  /* .card {
     width: 95%;
     height: auto;
     padding: 16px;
-  }
+  } */
   
-  h2 {
+  /* h2 {
     text-align: left;
     color: #4aaaa5;
     font-size: 30px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
+} */
 
   .undrln {
       border-bottom: 3px solid #dddddd; 
@@ -100,8 +109,8 @@
   #avatar {
       height: 190px;
       width: auto;
-      margin: 15px;
-      float: left;
+      margin-top: 20px;
+      /* float: left; */
   }
 
   .bio {
@@ -141,33 +150,34 @@
   }
 
     /* portfolio.html */
-  img {
+  .portpic {
     height: 220px; /*needed size for this layout.*/
     width: auto;
 }
   
-  #top, #middle, #bottom {
+  /* #top, #middle, #bottom {
       float: left;
       margin: 20px 20px 12px;
-  }
+  } */
 
-  #rpg, #widget {
+  /* #rpg, #widget {
       margin-left: 30px;
-  }
+  } */
 
     /* footer */
   footer {
-      width: 100%;
-      margin-top: 75px;
-      height: 75px;
-      color: white;
-      text-align: center;
-      background-color: #666666;
-      border-top: 8px solid #4aaaa5;
+      /* width: 100%; */
+      top: 75px;
+      position: relative;
+      /* height: 75px; */
+      /* color: white; */
+      /* text-align: center; */
+      /* background-color: #666666; */
+      border-top: 8px solid #009688;
       flex-shrink: 0; /*for the flex container*/
   }
 
   .copy {
     position: relative;
-    top: 35px;
+    top: 25px;
   }
