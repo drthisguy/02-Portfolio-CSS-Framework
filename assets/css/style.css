@@ -52,13 +52,17 @@
 
 
   /* Media Queries */
-  @media (max-width: 40em) {
+  @media (max-width: 48em) {
 
     .container {
-      /* float: none; */
-      /* margin: 0; */
       margin: 0;
       padding: 0;
+    }
+    .navbar {
+      flex-direction: row;
+    }
+    li {
+      float: center;
     }
     .bio {
       font-size: 100%;
@@ -68,4 +72,37 @@
       padding: 0;
       margin: 0;
     }
+    #avatar {
+      height: 120px;
+      width: auto;
+      
+    }
   }
+
+  /* Media Queries */
+  @media (max-width: 62em) {
+
+    .container {
+      margin: 0;
+      
+    }
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .mp_0 {
+      padding: 0;
+      margin: 0;
+    }
+    .bio {
+      font-size: 140%;
+      color: black;
+      margin-left: 10pt;
+    }
+    }
+    #avatar {
+      height: 190px;
+      width: auto;
+      
+    }
+  
