@@ -28,7 +28,7 @@
   
 
   #name, #email, #message {
-      border: 1px solid  rgba(138,130,129, 0.3); /*Opacity would effect text.*/
+      border: 1px solid  rgba(145, 108, 103, 0.3); /*Opacity would effect text.*/
 }
 
     /* portfolio.html */
@@ -52,71 +52,62 @@
 
 
   /* Media Queries */
-  @media (max-width: 48em) {
-
-    .container {
-      margin: 0;
-      padding: 0;
-    }
-    .navbar {
-      flex-direction: row;
-    }
-    li {
-      float: center;
-    }
-    .bio {
-      font-size: 100%;
-      color: black;
-    }
-    .mp_0 {
-      padding: 0;
-      margin: 0;
-    }
-
-    #avatar {
-      height: 120px;
-      width: auto;
-    }
-
-    .justify-content-end {
-      display: block;
-  }
-
-  ul {
-    padding: 0;
-  }
-}
-
-  /* Media Queries */
-  @media (max-width: 62em) {
-
-    .container {
-      margin: 0;
-      
+  @media (max-width: 992px) {
+    p.bio {
+    font-size: 140%;
     }
     p.one {
       padding-left: 60pt;
     }
-    .navbar {
-      flex-direction: row;
+  }
+  @media (max-width: 768px) {
+
+    .container {
+      padding: 0;
+    }
+    p.one {
+      padding: 0;
+      margin-left: 0rem!important; /*overridden*/
+    }
+    .justify-content-end {
+      display: block;
+    } 
+
+    p.bio {
+      font-size: 120%;
     }
   
-    .mp_0 {
-      padding: 0;
-      margin: 0;
-    }
-    .bio {
-      font-size: 140%;
-      color: black;
-      margin-left: 10pt;
+    .cntr {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    } 
+     h2 {
+      text-align: center;
     }
     
      ul {
-       float: left;
+       padding-left: 0;
      }
-
-     #avatar {
-      height: 180px;
-      width: auto;
-    }
   }
+
+  /* Media Queries */
+  @media (max-width: 640px) {
+
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .bio {
+      font-size: 100%;
+      color: black;
+    }
+
+    p.one {
+      margin-left: 10px!important; /*overridden*/
+    }
+    
+  }
+
+  
