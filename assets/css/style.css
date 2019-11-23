@@ -51,15 +51,30 @@
   }
 
 
-  /* Media Queries */
+  /* Media Queries mostly setup at bootstrap breakpoints*/
+
+  @media (max-width: 1200px) {
+    .portpic {
+      height: 190px; 
+      width: auto;
+  }
+
+  }
   @media (max-width: 992px) {
     p.bio {
     font-size: 140%;
     }
+
     p.one {
       padding-left: 60pt;
     }
+
+    .portpic {
+      height: 140px; 
+      width: auto;
   }
+  }
+
   @media (max-width: 768px) {
 
     .container {
@@ -67,7 +82,7 @@
     }
     p.one {
       padding: 0;
-      margin-left: 0rem!important; /*overridden*/
+      margin-left: 0rem!important; /*override bootstrap*/
     }
     .justify-content-end {
       display: block;
@@ -89,9 +104,13 @@
      ul {
        padding-left: 0;
      }
+     .portpic {
+      height: 140px; 
+      width: auto;
+  } 
   }
 
-  /* Media Queries */
+
   @media (max-width: 640px) {
 
     .container {
@@ -105,7 +124,7 @@
     }
 
     p.one {
-      margin-left: 10px!important; /*overridden*/
+      margin-left: 10px!important; /*override bootstrap*/
     }
     
   }
