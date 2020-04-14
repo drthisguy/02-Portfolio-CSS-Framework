@@ -4,7 +4,7 @@
   }
   
   li.port, li.about {
-    border-right: 2px solid  rgba(119,119,119, 0.2); 
+    border-right: 2px solid  rgba(119,119,119, 0.2); /*Opacity would effect text.*/
     line-height: 3px;
   }
 
@@ -51,22 +51,37 @@
   }
 
 
-  /* Media Queries setup at bootstrap breakpoints*/
+  /* Media Queries mostly setup at bootstrap breakpoints*/
+
+  @media (max-width: 1200px) {
+    .portpic {
+      height: 190px; 
+      width: auto;
+  }
+
+  }
   @media (max-width: 992px) {
     p.bio {
-    font-size: 140%;
+      font-size: 140%;
     }
+
     p.one {
       padding-left: 60pt;
     }
+
+    .portpic {
+      height: 140px; 
+      width: auto;
   }
+  }
+
   @media (max-width: 768px) {
 
     .container {
       padding: 0;
     }
-    p.one {
-      padding: 0;
+    p.one, .card-body {
+      padding: 0rem!important;
       margin-left: 0rem!important; /*override bootstrap*/
     }
     .justify-content-end {
@@ -82,16 +97,22 @@
       justify-content: center;
       display: flex;
     } 
-     h2 {
+
+     h2, .cnt-btn {
       text-align: center;
     }
     
      ul {
        padding-left: 0;
      }
+
+     .portpic {
+      height: 140px; 
+      width: auto;
+  } 
   }
 
-  /* Media Queries */
+
   @media (max-width: 640px) {
 
     .container {
