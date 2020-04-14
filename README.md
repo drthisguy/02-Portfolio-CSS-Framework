@@ -24,7 +24,7 @@ style.css
 
 Deployed site:
 
-https://drthisguy.github.io/Homework-2/index.html
+https://drthisguy.github.io/02-Portfolio-CSS-Framework
 
 Screen grabs:
 
